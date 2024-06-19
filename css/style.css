@@ -25,22 +25,20 @@ h3 {
 .sidebar {
   display: none; /* Hidden by default */
   position: fixed;
-  left: 35vw;
-  top: 20vh;
+  left: 0;
+  top: 20px;
   width: 300px;
-  height: 400px;
   background-color: #f1f1f1;
   padding: 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
 }
 
 #bookForm {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 15px;
-  height: 100%;
-  align-content: center; /* Vertically center the content */
 }
 
 #bookForm * {
@@ -56,16 +54,22 @@ h3 {
   text-align: center;
 }
 
-#submit-btn {
+button {
   grid-column: span 2;
   margin: 0 auto;
-  width: 30%;
+  width: 100px;
   background-color: white;
   border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
 }
 
-#submit-btn:hover {
+button:hover {
   filter: invert(75%);
+}
+
+input {
+  border: 1px solid black;
 }
 
 .bookList {

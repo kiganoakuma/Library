@@ -7,20 +7,6 @@ function Book(title, author, pages, read = false) {
   this.read = read;
 }
 
-const book1 = new Book("alskdjf", "askdjfha", 230);
-const book2 = new Book("alskdjf", "askdjfha", 230);
-const book3 = new Book("alskdjf", "askdjfha", 230);
-const book4 = new Book("alskdjf", "askdjfha", 230);
-const book5 = new Book("alskdjf", "askdjfha", 230);
-const book6 = new Book("alskdjf", "askdjfha", 230);
-
-addBookToLibrary(book1);
-addBookToLibrary(book2);
-addBookToLibrary(book3);
-addBookToLibrary(book4);
-addBookToLibrary(book5);
-addBookToLibrary(book6);
-
 function addBookToLibrary(book) {
   myLibrary.push(book);
 }
