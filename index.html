@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>TEST</title>
+  </head>
+  <body>
+    <header>
+      <h2>Reading List</h2>
+    </header>
+    <div class="main-content">
+      <button id="newBookButton">NEW BOOK</button>
+      <div class="bookList"></div>
+      </div>
+    </div>
+
+    <div id="sidebarForm" class="sidebar">
+      <form id="bookForm">
+        <label class="formInpLabel" for="title">Title:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label class="formInpLabel" for="author">Author:</label>
+        <input type="text" id="author" name="author" required />
+
+        <label class="formInpLabel" for="pages">Number of Pages:</label>
+        <input type="number" id="pages" name="pages" required />
+
+        <div class="centered">
+          <label class="formInpLabel" for="read">Read:</label>
+          <input type="checkbox" id="read" name="read" />
+        </div>
+        <button id="submit-btn" type="submit">Add Book</button>
+      </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
